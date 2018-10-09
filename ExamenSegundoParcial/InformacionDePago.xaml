@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="ExamenSegundoParcial.InformacionDePago"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExamenSegundoParcial"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Número de Trajeta:" Grid.Column="0" Grid.Row="0"></TextBlock>
+        <TextBox Name="txtNumTar" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3"></TextBox>
+        <TextBlock Text="CVV:" Grid.Column="0" Grid.Row="2"></TextBlock>
+        <TextBox Name="txtCVV" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3"></TextBox>
+        <TextBlock Text="Mex de Expiración:" Grid.Column="0" Grid.Row="4"></TextBlock>
+        <TextBox Name="txtMesExp" Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="3"></TextBox>
+        <TextBlock Text="Año de Expiracón:" Grid.Column="0" Grid.Row="6"></TextBlock>
+        <TextBox Name="txtAnoExp" Grid.Column="0" Grid.Row="7" Grid.ColumnSpan="3"></TextBox>
+        <TextBlock Text="Es necesario Que el número de la tarjeta sean 16 dígitos." Name="lblCondic3" Visibility="Collapsed" Grid.Column="1" Grid.Row="8"></TextBlock>
+        
+    </Grid>
+</UserControl>
